@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card hidden" id="page2">
+        <img src="Cute Angry Cat Sticker.jpg" alt="Angry Cat" class="card-image">
+
+        <h1>How Dare You!</h1>
+        <p class="sub-text">You will go back to say YES!</p>
+
+        <a href="index.html">
+            <button class="btn go-back" onclick="goBack()">Go Back</button>
+        </a>
+    </div>
+
+    <script>
+        function showNoPage() {
+            document.getElementById("page1").classList.add("hidden");
+            document.getElementById("page2").classList.remove("hidden");
+        }
+
+        function goBack() {
+            document.getElementById("page2").classList.add("hidden");
+            document.getElementById("page1").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>

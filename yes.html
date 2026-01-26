@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card large hidden" id="page3">
+        <h1 class="title">This is for you 😍😁</h1>
+
+        <div class="love-container">
+            <img src="cat flower.jpg" class="bouquet">
+
+            <div class="love-text">
+                <div class="box">
+                    
+                    <p>Good This is for you</p>
+                    <p>NOW READ THE LETTER....</p>
+                </div>
+                <div class="box">
+                  
+                    <a href="letter.html">
+                        <button class="btn yes">READ THIS</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hearts">❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</div>
+    </div>
+
+    <script>
+        function showNoPage() {
+            hideAll();
+            document.getElementById("page2").classList.remove("hidden");
+        }
+
+        function showYesPage() {
+            hideAll();
+            document.getElementById("page3").classList.remove("hidden");
+        }
+
+        function goBack() {
+            hideAll();
+            document.getElementById("page1").classList.remove("hidden");
+        }
+
+        function hideAll() {
+            document.getElementById("page1").classList.add("hidden");
+            document.getElementById("page2").classList.add("hidden");
+            document.getElementById("page3").classList.add("hidden");
+        }
+    </script>
+
+</body>
+</html>
